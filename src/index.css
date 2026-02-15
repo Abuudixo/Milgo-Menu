@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-500: #EAB308;
+  --color-gold-400: #FDE047;
+}
+
+:root {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+@utility scrollbar-hide {
+  @layer utilities {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
